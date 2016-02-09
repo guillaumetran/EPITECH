@@ -1,0 +1,8 @@
+Objectif du projet : Créer une bataille navale multijoueur en utilisant les signaux.
+
+Les 2 joueurs doivent lancer le programme.
+
+J1 : ./navy pos_J1.txt
+J2 : ./navy pid_J1 pos_J2.txt
+
+pos.txt : Contient les positions des bateaux sur la carte.

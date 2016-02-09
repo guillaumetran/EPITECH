@@ -1,0 +1,12 @@
+BONUS !
+
+Objectif du projet : Créer un jeu sokoban en termcaps.
+
+Requis: libncurses
+
+Utilisation : ./my_sokoban level1.txt level2.txt level3.txt (...)
+
+Jeu : Pour bouger utiliser les flèches, pour ouvrir le menu 'q' et restart 'SPACE'
+
+TIPS : Des cartes sont disponibles dans le dossier "map".
+				    

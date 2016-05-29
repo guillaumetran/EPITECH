@@ -5,7 +5,7 @@
 ** Login   <tran@epitech.net>
 **
 ** Started on  Thu Apr 28 23:23:57 2016 Guillaume TRAN
-** Last update Fri Apr 29 01:11:34 2016 Guillaume TRAN
+** Last update Fri Apr 29 13:38:32 2016 Guillaume TRAN
 */
 
 #include <unistd.h>
@@ -69,7 +69,7 @@ int	flag_f(va_list args)
 {
   char	*str;
 
-  str = my_put_float(va_arg(args, double), 2);
+  str = my_put_float(va_arg(args, double), 1);
   my_putstr(str);
   return (my_strlen(str));
 }

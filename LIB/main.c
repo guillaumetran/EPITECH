@@ -5,7 +5,7 @@
 ** Login   <tran@epitech.net>
 **
 ** Started on  Fri Apr 29 01:37:54 2016 Guillaume TRAN
-** Last update Fri Apr 29 01:51:43 2016 Guillaume TRAN
+** Last update Fri Apr 29 13:39:43 2016 Guillaume TRAN
 */
 
 #include "my.h"
@@ -13,6 +13,9 @@
 int	main(int __attribute__((unused))ac,
 	     char __attribute__((unused))**av)
 {
-  my_printf("Hello world\n");
+  double f;
+
+  f = 0.0;
+  my_printf("Hello world %f\n", f);
   return (0);
 }

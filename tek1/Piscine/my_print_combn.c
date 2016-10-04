@@ -1,13 +1,9 @@
 #include <stdio.h>
 
-int main(int ac, char **av) {
-	my_print_combn(5);
-	return 0;
-}
-
 void clean_tab(int n, int *tab)
 {
 	int count = 1;
+	
 	while (count < n)
 	{
 		if (tab[n - count] == (11 - count))
@@ -31,6 +27,7 @@ void clean_tab(int n, int *tab)
 void init_tab(int n, int *tab)
 {
     int count = 0;
+	
     while (count < n)
 	{
 		tab[count] = count;

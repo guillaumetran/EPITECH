@@ -1,5 +1,22 @@
 #include <stdio.h>
 
+int my_print_combn(int n)
+{
+	int tab[n];
+	
+	init_tab(n, tab);
+	while (check_end(n, tab) != 0)
+	{
+	    while (tab[n - 1] <= 9)
+    	{
+    	    print_tab(n, tab, 0);
+    		tab[n - 1]++;
+    	}
+	    clean_tab(n, tab);
+	}
+	print_tab(n, tab, 1);
+}
+
 void clean_tab(int n, int *tab)
 {
 	int count = 1;
@@ -17,9 +34,7 @@ void clean_tab(int n, int *tab)
 	while (count < n)
 	{
 		if (tab[count] == (11 - (n - count)))
-		{
 			tab[count] = tab[count - 1] + 1;
-		}
 		count++;
 	}
 }
@@ -60,21 +75,4 @@ int check_end(int n, int *tab)
 			return 1;
 	}
 	return 0;
-}
-
-int my_print_combn(int n)
-{
-	int tab[n];
-	
-	init_tab(n, tab);
-	while (check_end(n, tab) != 0)
-	{
-	    while (tab[n - 1] <= 9)
-    	{
-    	    print_tab(n, tab, 0);
-    		tab[n - 1]++;
-    	}
-	    clean_tab(n, tab);
-	}
-	print_tab(n, tab, 1);
 }

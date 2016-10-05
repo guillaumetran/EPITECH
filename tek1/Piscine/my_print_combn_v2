@@ -1,11 +1,10 @@
 #include <stdio.h>
 
-// Version without array
-
 int unity(int num, int pow)
 {
     int res = num;
     int count = 0;
+    
     if (pow == 0)
         return (1);
     while (count < pow - 1)
@@ -20,6 +19,7 @@ int init_number(int n)
 {
     int number = 0, count = 0;
     n--;
+    
     while (n - count > 0)
     {
         number += (n - count) * unity(10, count);
@@ -46,6 +46,7 @@ int check_num(int num)
 {
     int save = num;
     int tmp = num % 10;
+    
     while (save / 10 != 0)
     {
         save /= 10;
@@ -59,9 +60,14 @@ int check_num(int num)
 
 int my_print_combn(int n)
 {
-    if (n > 10)
+    if (n > 10 || n == 0)
         return (1);
     int count = init_number(n);
+    if (n == 10)
+    {
+        print_num(count, n);
+        return (0);
+    }
     while (count / unity(10, n - 1) <= (10 - n))
     {
         if (check_num(count) == 0)

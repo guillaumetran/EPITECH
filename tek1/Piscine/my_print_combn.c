@@ -62,6 +62,7 @@ int check_end(int n, int *tab)
 
 int my_print_combn(int n)
 {
+	n++;
 	int tab[n];
 
 	init_tab(n, tab);
